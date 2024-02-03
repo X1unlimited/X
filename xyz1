@@ -1,4 +1,1 @@
-vless://5f759e13-3a57-43f4-9022-4b5488744fbd@thefullchain.xyz1.WoRKErS.DeV:443?path=vless-ws%2F%3Fed%3D2048&security=tls&encryption=none&alpn=h2,http/1.1&host=thefullchain.xyz1.WoRKErS.DeV&fp=randomized&type=ws&sni=thefullchain.xyz1.WoRKErS.DeV#src+%3CTheFullChain%3E
-vless://5f759e13-3a57-43f4-9022-4b5488744fbd@[0:0:0:0:0:ffff:6812:ff1f]:8443?path=vless-ws%2F%3Fed%3D2048&security=tls&encryption=none&alpn=http/1.1&host=thefullchain.xyz1.woRKErS.DEv&fp=randomized&type=ws&sni=thefullchain.xyz1.woRKErS.DEv#src+%3CTheFullChain%3E
-vless://70d4d6ee-84df-4d2e-a35d-958c466cb69c@thefullchain-v6.xyz1.wOrkErs.Dev:2096?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=thefullchain-v6.xyz1.wOrkErs.Dev&type=ws&sni=thefullchain-v6.xyz1.wOrkErs.Dev#src+%3CTheFullChain%3E+v6
-vless://70d4d6ee-84df-4d2e-a35d-958c466cb69c@[0:0:0:0:0:ffff:6812:ff1f]:8880?path=%2F%3Fed%3D2048&security=none&encryption=none&host=thefullchain-v6.xyz1.workers.dev&type=ws#src+%3CTheFullChain%3E+v6
+
