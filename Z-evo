@@ -1,4 +1,2 @@
-vless://x1unlimited@x1unlimited:443?security=none&encryption=none&headerType=none&type=tcp#Last+update+1402%2F11%2F14
 vless://0b0d133a-3163-4d75-89d5-fc5712f1ebdb@x1unlimited.z-evo.WORKERS.DeV:8080?path=vless-ws%2F%3Fed%3D2048&security=none&encryption=none&alpn=h2&host=x1unlimited.z-evo.WORKERS.DeV&fp=chrome&type=ws&sni=x1unlimited.z-evo.WORKERS.DeV#%3Cx1unlimited%3E
 vless://5f18b00a-f49d-4e7c-b5ad-eae0f99f37be@x1unlimited-v6.z-evo.woRkErs.Dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=x1unlimited-v6.z-evo.woRkErs.Dev&type=ws&sni=x1unlimited-v6.z-evo.woRkErs.Dev#%3Cx1unlimited%3E+v6
-socks://dFdoZ0pmNld4VG5OOUthTUNBQXluNkd2OiMxZnVsbGNoYWlu@fi-esp.pvdata.host:1080#test+Finland+%F0%9F%87%AB%F0%9F%87%AE
