@@ -1,1 +1,1 @@
-vless://bfe6a569-9263-4fcd-8dc7-c15a5eebbc64@unlimited.x-evo.WOrkeRS.Dev:443?path=vless-ws%2F%3Fed%3D2048&security=tls&encryption=none&alpn=http/1.1&host=unlimited.x-evo.WOrkeRS.Dev&fp=chrome&type=ws&sni=unlimited.x-evo.WOrkeRS.Dev#%3CX1unlimited%3E+TLS+%2B+FRAGMENT
+vless://c5af1da4-af8e-4457-9970-f03b4636abd5@unlimited.x-evo.workErS.Dev:8443?path=vless-ws%2F%3Fed%3D2048&security=tls&encryption=none&alpn=h2&host=unlimited.x-evo.workErS.Dev&fp=randomized&type=ws&sni=unlimited.x-evo.workErS.Dev#%3CX1unlimited%3E+TLS+%2B+FRAGMENT
