@@ -8,3 +8,5 @@ warp://188.114.97.150:1010/?ifp=5-10#7- <X1unlimited>
 warp://188.114.98.97:1010/?ifp=5-10#8- <X1unlimited>
 warp://188.114.99.227:4198/?ifp=5-10#9- <X1unlimited>
 warp://[2606:4700:d0::175e:9838:be64:b740]:891/?ifp=5-10#10- <X1unlimited> v6
+warp://[2606:4700:d0::175e:9838:be64:b740]:7152/?ifp=5-10#11- <X1unlimited> v6
+warp://[2606:4700:d0::2bc4:ce59:c235:31e4]:8854/?ifp=5-10#12- <X1unlimited> v6
