@@ -1,3 +1,4 @@
+[
 {
   "remarks": "دژمن",
   "log": {
@@ -471,8 +472,7 @@
     "EnableConcurrency": true
   },
   "stats": {}
-}
-,
+},
 {
   "remarks": "دژمن پلاس",
   "dns": {
@@ -621,4 +621,4 @@
   },
   "stats": {}
 }
-
+]
