@@ -1,5 +1,5 @@
 {
-  "remarks": "وعده باقر",
+ "remarks": "BVK",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -53,13 +53,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.67.73.174",
+            "address": "104.16.185.116",
             "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "cdf8ee43-295b-4e65-aef0-8aa3ddc05938",
+                "id": "370db21a-d10e-45e2-9fe5-ed64be01c608",
                 "level": 8,
                 "security": "auto"
               }
@@ -76,9 +76,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "X1unlImItEd-bpb.z-EVO.woRkers.dEV"
+            "Host": "X1UNLIMitEd-BpB.z-eVO.worKErs.dEV"
           },
-          "path": "/UseuNwOHwNUVIYRx?ed=2560"
+          "path": "/go511z1loZUmlVE1?ed=2560"
         }
       },
       "tag": "proxy"
