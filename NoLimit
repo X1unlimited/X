@@ -1,5 +1,5 @@
 {
- "remarks": "BVK",
+  "remarks": "x1unlimited [🇩🇪] v:2.5.5",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -53,13 +53,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.185.116",
+            "address": "108.162.193.50",
             "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "370db21a-d10e-45e2-9fe5-ed64be01c608",
+                "id": "d8e2ea41-10ba-4c20-93dc-061a0ad45946",
                 "level": 8,
                 "security": "auto"
               }
@@ -76,9 +76,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "X1UNLIMitEd-BpB.z-eVO.worKErs.dEV"
+            "Host": "x1unlimited-bpb.z-evo.workers.dev"
           },
-          "path": "/go511z1loZUmlVE1?ed=2560"
+          "path": "/FFKyDN9lPNqnCOVz?ed=2560"
         }
       },
       "tag": "proxy"
