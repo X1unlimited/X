@@ -1,5 +1,5 @@
 {
-  "remarks": "x1unlimited [🇩🇪] v:2.5.5",
+  "remarks": "x1unlimited [🇨🇭]",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -59,7 +59,7 @@
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "d8e2ea41-10ba-4c20-93dc-061a0ad45946",
+                "id": "3799f347-4c2a-4350-9368-8dcc39f9106d",
                 "level": 8,
                 "security": "auto"
               }
