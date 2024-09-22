@@ -1,5 +1,5 @@
 {
-"remarks": "x1unlimited [🇨🇭] TLS",
+"remarks": "x1unlimited [🇨🇭] Non-TLS",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -53,8 +53,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "140.248.152.40",
-            "port": 443,
+            "address": "108.162.193.50",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
@@ -69,29 +69,16 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
+        "security": "",
         "sockopt": {
           "dialerProxy": "fragment",
           "tcpNoDelay": true
         },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "randomized",
-          "publicKey": "",
-          "serverName": "thex1unlimited.ir",
-          "shortId": "",
-          "show": false,
-          "spiderX": ""
-        },
         "wsSettings": {
           "headers": {
-            "Host": "thex1unlimited.ir"
+            "Host": "x1unlimited-bpb.z-evo.workers.dev"
           },
-          "path": "/SB3Vo1D2s2DlzOn2?ed=2560"
+          "path": "/8WTv0TCkBV7AXrRz?ed=2560"
         }
       },
       "tag": "proxy"
