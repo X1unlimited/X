@@ -54,7 +54,7 @@
         "vnext": [
           {
             "address": "190.93.244.55",
-            "port": 2086,
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
