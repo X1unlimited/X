@@ -54,12 +54,12 @@
         "vnext": [
           {
             "address": "190.93.244.55",
-            "port": 8080,
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "17812ba2-d78b-492a-9cb2-65f1e3994d36",
+                "id": "41725d4b-5a06-4855-b761-26d639c91b91",
                 "level": 8,
                 "security": "auto"
               }
@@ -78,7 +78,7 @@
           "headers": {
             "Host": "x1unlimited-bpb.1one.workers.dev"
           },
-          "path": "/uLpKzXGjc1Cn7m29?ed=2560"
+          "path": "/oJGkvoDTKOeeDFch?ed=2560"
         }
       },
       "tag": "proxy"
