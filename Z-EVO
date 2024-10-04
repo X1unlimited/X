@@ -53,13 +53,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "108.162.193.50",
-            "port": 8080,
+            "address": "104.18.202.232",
+            "port": 2095,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "8bf1d127-d600-4841-a045-b702f496de47",
+                "id": "127ba315-acc1-4bb7-8fda-9375266d3290",
                 "level": 8,
                 "security": "auto"
               }
@@ -76,9 +76,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "x1unlimited-bpb.z-evo.workers.dev"
+            "Host": "x1unlimited-bpb.z-Evo.workers.Dev"
           },
-          "path": "/8WTv0TCkBV7AXrRz?ed=2560"
+          "path": "/CB85Mcsvh4gGAq32?ed=2560"
         }
       },
       "tag": "proxy"
