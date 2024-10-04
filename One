@@ -53,7 +53,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.68.108.168",
+            "address": "31.22.116.141",
             "port": 8080,
             "users": [
               {
@@ -76,7 +76,7 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "x1unlimited-bpb.1one.workers.dev"
+            "Host": "x1unlimited-bpb.1one.WORkers.DEv"
           },
           "path": "/oJGkvoDTKOeeDFch?ed=2560"
         }
