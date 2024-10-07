@@ -1,5 +1,5 @@
 {
-"remarks": "x1unlimited [🇩🇪] Non-TLS",
+"remarks": "x1unlimited [🇩🇪] update: 03-7-17",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -53,13 +53,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "31.22.116.141",
+            "address": "108.162.193.50",
             "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "41725d4b-5a06-4855-b761-26d639c91b91",
+                "id": "f3fd54c9-4733-469b-b1c6-2f8c85ef7f4d",
                 "level": 8,
                 "security": "auto"
               }
