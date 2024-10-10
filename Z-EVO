@@ -1,5 +1,5 @@
 {
-"remarks": "x1unlimited [🇨🇭] Non-TLS",
+"remarks": "x1unlimited [🇨🇭] update: 03-7-19",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com"
@@ -59,7 +59,7 @@
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "3fca1b9c-da35-44ff-968e-4cd9946d4302",
+                "id": "ea893d10-966a-4da9-8b05-fb92dca4c502",
                 "level": 8,
                 "security": "auto"
               }
