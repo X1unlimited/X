@@ -1,8 +1,199 @@
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@194.127.167.107:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=%2B8dUgpD7YA4wMPnRQkO7EI7AeYd30QPMKh%2FhOaaGIXY%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Estonia+%F0%9F%87%AA%F0%9F%87%AA
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@195.47.194.161:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=LOd1SY9YCHGiJUVT%2BXdYRdORu6ZMw4CqOKQBW2ElLg8%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Cyrus+%F0%9F%87%A8%F0%9F%87%BE
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@92.60.40.209:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=uUYbYGKoA6UBh1hfkAz5tAWFv4SmteYC9kWh7%2FK6Ah0%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Amsterdam+%F0%9F%87%B3%F0%9F%87%B1
-wireguard://dz3CqEIV9%2FTJvle8H3jETyywCdJeX4e9zwkOYnWfnm8%3D@185.254.75.4:51820?wnoise=quic&address=10.69.114.248%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A6%3A72f7%2F128%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=TPAIPTgu9jIitgX1Bz5xMCZJ9pRRZTdtZEOIxArO0Hc%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Germany+%F0%9F%87%A9%F0%9F%87%AA
-wireguard://dz3CqEIV9%2FTJvle8H3jETyywCdJeX4e9zwkOYnWfnm8%3D@193.138.7.157:3138?wnoise=quic&address=10.69.114.248%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A6%3A72f7%2F%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Finland+%F0%9F%87%AB%F0%9F%87%AE
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@138.199.15.146:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&reserved=0%2C0%2C0&keepalive=5&wpayloadsize=5-10&publickey=Z0LEgZIPhNj0%2B%2FVWknU3roHlVI3qqAfoV6th9NSC0F0%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#France+%F0%9F%87%A8%F0%9F%87%B5
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@169.150.227.210:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&keepalive=5&wpayloadsize=5-10&publickey=UNeML4rXjvOerAstTNf4gG5B%2BOfjVzjSQrWE6mrswD0%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Israel+%F0%9F%87%AE%F0%9F%87%B1
-wireguard://bdq37KtfoG1Tm7yQcfitdRyGeZOn%2Fc7PwLN%2BLgG%2F6nA%3D@185.209.199.12:51820?wnoise=quic&address=10.68.255.97%2F32%2Cfc00%3Abbbb%3Abbbb%3Abb01%3A%3A5%3Aff60%2F128%2C100.64.0.23&reserved=0%2C0%2C0&keepalive=5&wpayloadsize=5-10&publickey=ywfkKYdoVAnjsSYW145ACtrw3DV8xTzFS1hlIO7QRD4%3D&wnoisedelay=1-2&wnoisecount=15&mtu=1280#Sweden+%F0%9F%87%B8%F0%9F%87%AA
+{
+  "remarks": "Warp Pro",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": [
+        "googleapis.com"
+      ],
+      "geosite:category-ads-all": [
+        "127.0.0.1"
+      ],
+      "geosite:category-ads-ir": [
+        "127.0.0.1"
+      ],
+      "geosite:category-porn": [
+        "127.0.0.1"
+      ]
+    },
+    "servers": [
+      "1.1.1.1",
+      {
+        "address": "9.9.9.13",
+        "domains": [
+          "geosite:category-ir"
+        ],
+        "port": 53
+      }
+    ],
+    "tag": "dns"
+  },
+  "inbounds": [
+    {
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "socks-in"
+    },
+    {
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "http-in"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "1.1.1.1",
+        "network": "tcp,udp",
+        "port": 53
+      },
+      "tag": "dns-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "wireguard",
+      "settings": {
+        "address": [
+          "172.16.0.2/32",
+          "2606:4700:110:8b4a:642c:70e8:2264:f8ff/128"
+        ],
+        "mtu": 1280,
+        "peers": [
+          {
+            "endpoint": "188.114.97.149:943",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+            "keepAlive": 5
+          }
+        ],
+        "reserved": [
+          1,
+          66,
+          61
+        ],
+        "secretKey": "WLL4IAnzstV/WfK27i3pL+ySSfe7Z6rSwxxmEwhTA0I=",
+        "wnoise": "quic",
+        "wnoisecount": "10-15",
+        "wpayloadsize": "5-10",
+        "wnoisedelay": "1"
+      },
+      "tag": "warp"
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "9.9.9.13"
+        ],
+        "outboundTag": "direct",
+        "port": "53",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:category-ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private",
+          "geoip:ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:category-ads-all",
+          "geosite:category-ads-ir",
+          "geosite:category-porn"
+        ],
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "outboundTag": "warp",
+        "type": "field",
+        "ip": [
+          "0.0.0.0/0",
+          "::/0"
+        ]
+      }
+    ]
+  },
+  "stats": {}
+}
