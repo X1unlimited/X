@@ -67,7 +67,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.96.0",
+            "address": "104.17.147.22",
             "port": 8080,
             "users": [
               {
