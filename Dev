@@ -1,4 +1,4 @@
-{
+[{
  "remarks": "x1unlimited",
     "dns": {
         "hosts": {
@@ -160,3 +160,4 @@
   },
   "stats": {}
 }
+]
