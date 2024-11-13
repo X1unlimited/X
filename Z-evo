@@ -1,6 +1,6 @@
 [
 {
-"remarks": "x1unlimited[🇳🇱] Operators IPV6",
+"remarks": "x1unlimited[🇳🇱] ADSL",
   "dns": {
     "hosts": {
       "dns.adguard-dns.com": [
@@ -67,7 +67,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "2a06:98c1:3120::",
+            "address": "104.18.202.232",
             "port": 8080,
             "users": [
               {
@@ -92,7 +92,7 @@
           "headers": {
             "Host": "x1unlimited.z-evo.workers.dev"
           },
-          "path": "/68SxLrtq2XOwMFxd/MTU4LjEwMS4yMDkuNzY=?ed=2560"
+          "path": "/vWUmh9zG5mPPNLA3/MTU4LjEwMS4yMDkuNzY=?ed=2560"
         }
       },
       "tag": "proxy"
