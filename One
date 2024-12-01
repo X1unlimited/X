@@ -1,6 +1,6 @@
 [
 {
-  "remarks": "x1unlimited[🇳🇱] ADSL/Operators",
+    "remarks": "x1unlimited[🇳🇱] ADSL",
   "dns": {
     "hosts": {
       "dns.adguard-dns.com": [
@@ -73,7 +73,7 @@
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b4adf9f9-080f-4dfe-93d0-3c8886805357",
+                "id": "c3628645-2b4b-4b07-a952-d4767216221c",
                 "level": 8,
                 "security": "auto"
               }
@@ -90,9 +90,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "noise.one-one.workers.dev"
+            "Host": "unlimited.one-one.workers.dev"
           },
-          "path": "/vyaGd5CjuSejkeCl?ed=2560"
+          "path": "/oJPjac06axi7k4of?ed=2560"
         }
       },
       "tag": "proxy"
@@ -116,7 +116,7 @@
       "settings": {
         "fragment": {
           "length": "50-100",
-          "packets": "1-1",
+          "packets": "1-2",
           "interval": "4-8"
         },
         "userLevel": 8
@@ -161,7 +161,7 @@
   "stats": {}
 },
 {
-   "remarks": "x1unlimited[🇳🇱] Operators",
+  "remarks": "x1unlimited[🇳🇱] Operators",
   "dns": {
     "hosts": {
       "dns.adguard-dns.com": [
@@ -228,13 +228,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "2a06:98c1:3121::3",
+            "address": "2a06:98c1:3120::3",
             "port": 8080,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "b4adf9f9-080f-4dfe-93d0-3c8886805357",
+                "id": "c3628645-2b4b-4b07-a952-d4767216221c",
                 "level": 8,
                 "security": "auto"
               }
@@ -251,9 +251,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "noise.one-one.workers.dev"
+            "Host": "unlimited.one-one.workers.dev"
           },
-          "path": "/1DLvFQ1m1FU2Ymyh?ed=2560"
+          "path": "/MExV1HtnCREVLUPu?ed=2560"
         }
       },
       "tag": "proxy"
@@ -277,7 +277,7 @@
       "settings": {
         "fragment": {
           "length": "50-100",
-          "packets": "1-1",
+          "packets": "1-2",
           "interval": "4-8"
         },
         "userLevel": 8
