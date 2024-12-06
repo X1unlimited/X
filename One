@@ -1,6 +1,5 @@
-[
 {
-    "remarks": "x1unlimited[🇳🇱] ADSL",
+  "remarks": "x1unlimited[🇳🇱]",
   "dns": {
     "hosts": {
       "dns.adguard-dns.com": [
@@ -73,7 +72,7 @@
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "c3628645-2b4b-4b07-a952-d4767216221c",
+                "id": "89b3cbba-e6ac-485a-9481-976a0415eab9",
                 "level": 8,
                 "security": "auto"
               }
@@ -90,170 +89,9 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "unlimited.one-one.workers.dev"
+            "Host": "one-one.one-one.workers.dev"
           },
-          "path": "/oJPjac06axi7k4of?ed=2560"
-        }
-      },
-      "tag": "proxy"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {},
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      },
-      "tag": "block"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "length": "50-100",
-          "packets": "1-2",
-          "interval": "4-8"
-        },
-        "userLevel": 8
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "",
-        "sockopt": {
-          "tcpNoDelay": true
-        }
-      },
-      "tag": "fragment"
-    }
-  ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "ip": [
-          "8.8.8.8"
-        ],
-        "outboundTag": "proxy",
-        "port": "53",
-        "type": "field"
-      }
-    ]
-  },
-  "stats": {}
-},
-{
-  "remarks": "x1unlimited[🇳🇱] Operators",
-  "dns": {
-    "hosts": {
-      "dns.adguard-dns.com": [
-        "94.140.14.14",
-        "94.140.15.15"
-      ],
-      "family.adguard-dns.com": [
-        "94.140.14.15",
-        "94.140.15.16"
-      ]
-    },
-    "servers": [
-      "https://dns.adguard-dns.com/dns-query",
-      "https://family.adguard-dns.com/dns-query",
-      "94.140.14.14",
-      "94.140.15.15",
-      "94.140.14.15",
-      "94.140.15.16"
-    ],
-    "tag": "dns"
-  },
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "userLevel": 8
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "enabled": true,
-        "routeOnly": false
-      },
-      "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "userLevel": 8
-      },
-      "tag": "http"
-    }
-  ],
-  "log": {
-    "loglevel": "warning"
-  },
-  "outbounds": [
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false,
-        "xudpConcurrency": 8,
-        "xudpProxyUDP443": ""
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2a06:98c1:3120::3",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "c3628645-2b4b-4b07-a952-d4767216221c",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "",
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpNoDelay": true
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "unlimited.one-one.workers.dev"
-          },
-          "path": "/MExV1HtnCREVLUPu?ed=2560"
+          "path": "/hW4XsVaCoGtdESFD/MTQxLjE0OC4yMjcuMTk=?ed=2560"
         }
       },
       "tag": "proxy"
@@ -321,4 +159,3 @@
   },
   "stats": {}
 }
-]
