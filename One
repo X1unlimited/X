@@ -66,7 +66,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "0:0:0:0:0:ffff:6812:cae8",
+            "address": "www.speedtest.net",
             "port": 8080,
             "users": [
               {
