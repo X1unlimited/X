@@ -1,55 +1,20 @@
 {
+  "remarks": "X1unlimited TLS 🪽",
+  "log": {
+    "loglevel": "warning"
+  },
   "dns": {
-    "hosts": {
-      "domain:googleapis.cn": "googleapis.com",
-      "dns.alidns.com": [
-        "223.5.5.5",
-        "223.6.6.6",
-        "2400:3200::1",
-        "2400:3200:baba::1"
-      ],
-      "one.one.one.one": [
-        "1.1.1.1",
-        "1.0.0.1",
-        "2606:4700:4700::1111",
-        "2606:4700:4700::1001"
-      ],
-      "dot.pub": [
-        "1.12.12.12",
-        "120.53.53.53"
-      ],
-      "dns.google": [
-        "8.8.8.8",
-        "8.8.4.4",
-        "2001:4860:4860::8888",
-        "2001:4860:4860::8844"
-      ],
-      "dns.quad9.net": [
-        "9.9.9.9",
-        "149.112.112.112",
-        "2620:fe::fe",
-        "2620:fe::9"
-      ],
-      "common.dot.dns.yandex.net": [
-        "77.88.8.8",
-        "77.88.8.1",
-        "2a02:6b8::feed:0ff",
-        "2a02:6b8:0:1::feed:0ff"
-      ],
-      "one-one.one-one.workers.dev": [
-        "188.114.97.3",
-        "188.114.96.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
-      ]
-    },
     "servers": [
-      "1.1.1.1"
-    ]
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "tag": "remote-dns"
+      }
+    ],
+    "queryStrategy": "UseIP",
+    "tag": "dns"
   },
   "inbounds": [
     {
-      "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "socks",
       "settings": {
@@ -63,31 +28,33 @@
           "tls"
         ],
         "enabled": true,
-        "routeOnly": false
+        "routeOnly": true
       },
-      "tag": "socks"
+      "tag": "socks-in"
+    },
+    {
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "1.1.1.1",
+        "network": "tcp,udp",
+        "port": 53
+      },
+      "tag": "dns-in"
     }
   ],
-  "log": {
-    "loglevel": "warning"
-  },
   "outbounds": [
     {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "one-one.one-one.workers.dev",
+            "address": "172.67.181.115",
             "port": 443,
             "users": [
               {
+                "id": "250ed9e5-c6a1-4023-a88b-bb8cbeda3f1e",
                 "encryption": "none",
-                "flow": "",
-                "id": "89b3cbba-e6ac-485a-9481-976a0415eab9",
                 "level": 8
               }
             ]
@@ -98,28 +65,38 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "TcpNoDelay": true,
-          "dialerProxy": "fragment",
-          "domainStrategy": "UseIPv4v6"
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "host": "oo.dianemarie877.workers.dev",
+          "path": "/s7QdRvMs73ojeIo0?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
+          "fingerprint": "randomized",
           "alpn": [
-            "h2",
             "http/1.1"
           ],
-          "fingerprint": "randomized",
-          "serverName": "one-OnE.One-ONE.WorKers.Dev",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "one-one.one-one.WOrkErs.Dev"
-          },
-          "path": "/yhStF5a4DgtosxQB/MTQxLjE0OC4yMjcuMTk=?ed=2560"
+          "serverName": "OO.DIAnEmarIE877.wOrkerS.dEv"
         }
       },
       "tag": "proxy"
+    },
+    {
+      "tag": "fragment",
+      "protocol": "freedom",
+      "settings": {
+        "fragment": {
+          "packets": "tlshello",
+          "length": "100-200",
+          "interval": "1-1"
+        },
+        "domainStrategy": "UseIPv4v6"
+      }
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
     },
     {
       "protocol": "freedom",
@@ -136,32 +113,6 @@
         }
       },
       "tag": "block"
-    },
-    {
-      "protocol": "freedom",
-      "settings": {
-        "fragment": {
-          "interval": "4-8",
-          "isEnabled": true,
-          "length": "20-40",
-          "packets": "tlshello"
-        },
-        "noises": [
-          {
-            "delay": "10-20",
-            "packet": "100-200",
-            "type": "rand"
-          }
-        ],
-        "userLevel": 8
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "TcpNoDelay": true
-        }
-      },
-      "tag": "fragment"
     }
   ],
   "policy": {
@@ -178,24 +129,46 @@
       "statsOutboundDownlink": true
     }
   },
-  "remarks": "X1unlimited TLS 🧢",
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
-        "ip": [
-          "1.1.1.1"
+        "inboundTag": [
+          "dns-in"
         ],
-        "outboundTag": "proxy",
-        "port": "53",
+        "outboundTag": "dns-out",
         "type": "field"
       },
       {
-        "ip": [
-          "223.5.5.5"
+        "inboundTag": [
+          "socks-in"
+        ],
+        "port": 53,
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "remote-dns"
+        ],
+        "outboundTag": "proxy",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "dns"
         ],
         "outboundTag": "direct",
-        "port": "53",
+        "type": "field"
+      },
+      {
+        "network": "udp",
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "network": "tcp",
+        "outboundTag": "proxy",
         "type": "field"
       }
     ]
