@@ -35,7 +35,7 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ],
+      ]
     },
     "servers": [
       "1.1.1.1"
@@ -93,23 +93,22 @@
         "security": "tls",
         "sockopt": {
           "TcpNoDelay": true,
-          "dialerProxy": "fragment",
-          "domainStrategy": "UseIPv4v6"
+          "dialerProxy": "fragment"
         },
         "tlsSettings": {
-          "allowInsecure": false,
+          "allowInsecure": true,
           "alpn": [
             "http/1.1"
           ],
           "fingerprint": "randomized",
-          "serverName": "YEK-YEK.One-ONE.workERS.DeV",
+          "serverName": "yek-Yek.ONe-ONe.wORkERS.Dev",
           "show": false
         },
         "wsSettings": {
           "headers": {
             "Host": "yek-yek.one-one.workers.dev"
           },
-          "path": "/JvdPiPTuiod1L4b1?ed=2560"
+          "path": "/nhzpsBVaVcjzpllZ?ed=2560"
         }
       },
       "tag": "proxy"
