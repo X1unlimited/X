@@ -36,10 +36,6 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "yek-yek.one-one.workers.dev": [
-        "188.114.96.3",
-        "188.114.97.3"
-      ]
     },
     "servers": [
       "1.1.1.1"
@@ -79,7 +75,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "yek-yek.one-one.workers.dev",
+            "address": "103.21.244.240",
             "port": 8443,
             "users": [
               {
