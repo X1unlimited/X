@@ -1,5 +1,5 @@
 {
-  "remarks":"🇩🇪 آلمان",
+  "remarks": "آلمان 🇩🇪",
   "log": {
     "loglevel": "warning"
   },
@@ -8,6 +8,13 @@
       {
         "address": "https://8.8.8.8/dns-query",
         "tag": "remote-dns"
+      },
+      {
+        "address": "8.8.8.8",
+        "domains": [
+          "full:www.speedtest.net"
+        ],
+        "skipFallback": true
       }
     ],
     "queryStrategy": "UseIP",
@@ -53,7 +60,7 @@
             "port": 443,
             "users": [
               {
-                "id": "a1baf17d-873f-4b0f-9f0c-04959d1f30a7",
+                "id": "d13c3fa6-842c-47e8-8910-81cb08398be6",
                 "encryption": "none",
                 "level": 8
               }
@@ -68,8 +75,8 @@
           "dialerProxy": "fragment"
         },
         "wsSettings": {
-          "host": "yek.one-one.workers.dev",
-          "path": "/2nBsscjqhCZx6FcR?ed=2560"
+          "host": "1-1.one-one.workers.dev",
+          "path": "/V8Tzgv3yuTBFqMHl?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -77,7 +84,7 @@
           "alpn": [
             "http/1.1"
           ],
-          "serverName": "yeK.onE-OnE.woRKeRs.Dev"
+          "serverName": "1-1.oNe-ONE.wOrkers.dEv"
         }
       },
       "tag": "proxy"
