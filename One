@@ -1,68 +1,67 @@
 {
-  "remarks": "آلمان 🇩🇪",
+  "remarks": "آلمان 🛹",
   "log": {
+    "access": "",
+    "error": "",
     "loglevel": "warning"
-  },
-  "dns": {
-    "servers": [
-      {
-        "address": "https://8.8.8.8/dns-query",
-        "tag": "remote-dns"
-      },
-      {
-        "address": "8.8.8.8",
-        "domains": [
-          "full:www.speedtest.net"
-        ],
-        "skipFallback": true
-      }
-    ],
-    "queryStrategy": "UseIP",
-    "tag": "dns"
   },
   "inbounds": [
     {
+      "tag": "socks",
       "port": 10808,
+      "listen": "127.0.0.1",
       "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "userLevel": 8
-      },
       "sniffing": {
+        "enabled": true,
         "destOverride": [
           "http",
           "tls"
         ],
-        "enabled": true,
-        "routeOnly": true
+        "routeOnly": false
       },
-      "tag": "socks-in"
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
     },
     {
-      "port": 10853,
-      "protocol": "dokodemo-door",
-      "settings": {
-        "address": "1.1.1.1",
-        "network": "tcp,udp",
-        "port": 53
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
       },
-      "tag": "dns-in"
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
     }
   ],
   "outbounds": [
     {
+      "tag": "proxy",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.26.15.85",
+            "address": "162.159.130.67",
             "port": 443,
             "users": [
               {
-                "id": "d13c3fa6-842c-47e8-8910-81cb08398be6",
+                "id": "a50a9d01-05bd-4616-982a-42e0590df6e4",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
                 "encryption": "none",
-                "level": 8
+                "flow": ""
               }
             ]
           }
@@ -71,114 +70,83 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
-        "sockopt": {
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "host": "1-1.one-one.workers.dev",
-          "path": "/V8Tzgv3yuTBFqMHl?ed=2560"
-        },
         "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
+          "allowInsecure": true,
+          "serverName": "HdFyNpv1c1.AIrLInEsHOma.coM",
           "alpn": [
+            "h2",
             "http/1.1"
           ],
-          "serverName": "1-1.oNe-ONE.wOrkers.dEv"
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/AxM3bYopgTenrq7EVoVf",
+          "headers": {
+            "Host": "HdFyNpv1c1.AIrLInEsHOma.coM"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
         }
-      },
-      "tag": "proxy"
+      }
     },
     {
       "tag": "fragment",
       "protocol": "freedom",
       "settings": {
+        "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "100-200",
-          "interval": "1-1"
-        },
-        "domainStrategy": "UseIPv4v6"
+          "packets": "1-1",
+          "length": "20-40",
+          "interval": "4-8"
+        }
+      },
+      "streamSettings": {
+        "sockopt": {
+          "tcpNoDelay": true,
+          "tcpKeepAliveIdle": 100
+        }
       }
     },
     {
-      "protocol": "dns",
-      "tag": "dns-out"
-    },
-    {
+      "tag": "direct",
       "protocol": "freedom",
       "settings": {
-        "domainStrategy": "UseIP"
-      },
-      "tag": "direct"
+
+      }
     },
     {
+      "tag": "block",
       "protocol": "blackhole",
       "settings": {
         "response": {
           "type": "http"
         }
-      },
-      "tag": "block"
+      }
     }
   ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
-      }
-    },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
   "routing": {
-    "domainStrategy": "IPIfNonMatch",
+    "domainStrategy": "AsIs",
     "rules": [
       {
+        "type": "field",
         "inboundTag": [
-          "dns-in"
+          "api"
         ],
-        "outboundTag": "dns-out",
-        "type": "field"
+        "outboundTag": "api",
+        "enabled": true
       },
       {
-        "inboundTag": [
-          "socks-in"
-        ],
-        "port": 53,
-        "outboundTag": "dns-out",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "remote-dns"
-        ],
+        "id": "5627785659655799759",
+        "type": "field",
+        "port": "0-65535",
         "outboundTag": "proxy",
-        "type": "field"
-      },
-      {
-        "inboundTag": [
-          "dns"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "network": "udp",
-        "outboundTag": "block",
-        "type": "field"
-      },
-      {
-        "network": "tcp",
-        "outboundTag": "proxy",
-        "type": "field"
+        "enabled": true
       }
     ]
-  },
-  "stats": {}
+  }
 }
