@@ -203,7 +203,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "w3.org",
+            "address": "8.35.211.32",
             "port": 443,
             "users": [
               {
@@ -252,8 +252,8 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "10-20",
-          "interval": "10-20"
+          "length": "40-20",
+          "interval": "4-8"
         }
       },
       "streamSettings": {
