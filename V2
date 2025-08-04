@@ -1,3 +1,152 @@
-vless://79c577d9-6ddd-4b96-9532-d632910b331f@88.216.69.45:443?path=%2F194.156.103.58-41210&security=tls&encryption=none&host=PESAr.ONe-ONe.WORkERs.DEV&type=ws&sni=PESAr.ONe-ONe.WORkERs.DEV#%F0%9F%87%A6%F0%9F%87%B2%20Armenia
-vless://9730a7a1-25b3-4ed6-beaa-302cdd7afcf7@45.192.224.88:443?path=%2F38.180.11.201-443&security=tls&encryption=none&host=PESAr.ONe-ONe.WORkERs.DEV&type=ws&sni=PESAr.ONe-ONe.WORkERs.DEV#%F0%9F%87%A6%F0%9F%87%AA%20UAE
-vless://eb3f72f1-b8ca-4eba-9867-fb9c2e8ce050@104.21.3.33:443?path=%2F2.56.127.220-8443&security=tls&encryption=none&host=PESAr.ONe-one.WORkERs.DEV&type=ws&sni=PESAr.ONe-one.WORkERs.DEV#%F0%9F%87%B9%F0%9F%87%B7%20Turkey
+{
+  "remarks": "Germany",
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "172.67.222.225",
+            "port": 443,
+            "users": [
+              {
+                "id": "a50a9d01-05bd-4616-982a-42e0590df6e4",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "HdFyNpv1c1.AIrLInEsHOma.coM",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/AxM3bYopgTenrq7EVoVf",
+          "headers": {
+            "Host": "HdFyNpv1c1.AIrLInEsHOma.coM"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
+        }
+      }
+    },
+    {
+      "tag": "fragment",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "AsIs",
+        "fragment": {
+          "packets": "1-1",
+          "length": "20-40",
+          "interval": "4-8"
+        }
+      },
+      "streamSettings": {
+        "sockopt": {
+          "tcpNoDelay": true,
+          "tcpKeepAliveIdle": 100
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {
+
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "api"
+        ],
+        "outboundTag": "api",
+        "enabled": true
+      },
+      {
+        "id": "5627785659655799759",
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy",
+        "enabled": true
+      }
+    ]
+  }
+}
